@@ -1,1 +1,1 @@
-export * from './lib/ladda-preloader2.component';
+export * from './lib/src/ladda-preloader2.component.js';

@@ -1,1 +1,1 @@
-exports.LaddaPreloader2Component = require('./lib/ladda-preloader2.component').LaddaPreloader2Component;
+exports.LaddaPreloader2Component = require('./lib/src/ladda-preloader2.component.js').LaddaPreloader2Component;

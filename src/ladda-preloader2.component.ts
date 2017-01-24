@@ -1,6 +1,6 @@
 import {Component, OnInit, Input, ElementRef, ViewEncapsulation} from '@angular/core';
 
-declare var Ladda: any;
+declare var require: any;
 
 @Component({
     selector: '[ladda-preloader]',
@@ -24,12 +24,14 @@ export class LaddaPreloader2Component implements OnInit {
 
     private inProgress: boolean;
     private laddaElement: any;
+    
+    private Ladda: any = require('node_modules/ladda/dist/ladda.min.js');
 
     constructor(private element: ElementRef) {
     }
 
     ngOnInit() {
-        this.laddaElement = Ladda.create(this.element.nativeElement.getElementsByTagName('button')[0]);
+        this.laddaElement = this.Ladda.create(this.element.nativeElement.getElementsByTagName('button')[0]);
     }
 
     click() {
