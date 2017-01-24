@@ -6,12 +6,12 @@
   "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rnadler/ng2-password-strength-bar.git"
+    "url": "git+https://github.com/DevTeamHub/ladda-preloader2.git"
   },
   "bugs": {
-    "url": "https://github.com/rnadler/ng2-password-strength-bar/issues"
+    "url": "https://github.com/DevTeamHub/ladda-preloader2/issues"
   },
-  "homepage": "https://github.com/rnadler/ng2-password-strength-bar#readme",
+  "homepage": "https://github.com/DevTeamHub/ladda-preloader2#readme",
   "scripts": {
     "start": "npm run build && concurrently \"tsc -w\" \"lite-server\" ",
     "e2e": "npm run build && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
