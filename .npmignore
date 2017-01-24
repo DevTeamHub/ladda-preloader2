@@ -1,9 +1,8 @@
 app
-src
+lib
 index.html
 karma*.*
 node_modules
-.travis.yml
 systemjs.config.js
 .gitignore
 .idea

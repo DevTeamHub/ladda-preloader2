@@ -3,7 +3,7 @@ import {Component, OnInit, Input, ElementRef, ViewEncapsulation} from '@angular/
 declare var require: any;
 
 @Component({
-    selector: '[ladda-preloader]',
+    selector: '[dt-ladda-preloader]',
     template: `<button class="ladda-button" 
                 [class.preloader]="inProgress" 
                 (click)="click()" 
@@ -13,10 +13,11 @@ declare var require: any;
                     <span></span>
                     <ng-content></ng-content>
                 </button>`,
+    styles: [require('./../node_modules/ladda/dist/ladda.min.css')],
     encapsulation: ViewEncapsulation.None
 })
 
-export class LaddaPreloader2Component implements OnInit {
+export class DtLaddaPreloader2Component implements OnInit {
     @Input() operation: any;
     @Input() color: string = 'white';
     @Input() style: string = 'zoom-out';
@@ -25,7 +26,7 @@ export class LaddaPreloader2Component implements OnInit {
     private inProgress: boolean;
     private laddaElement: any;
     
-    private Ladda: any = require('node_modules/ladda/dist/ladda.min.js');
+    private Ladda: any = require('./../node_modules/ladda/dist/ladda.min.js');
 
     constructor(private element: ElementRef) {
     }

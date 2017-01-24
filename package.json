@@ -1,5 +1,5 @@
 {
-  "name": "ladda-preloader2",
+  "name": "ng2-ladda-preloader",
   "version": "1.0.0",
   "description": "Angular2 wrapper for Ladda preloader",
   "main": "./index.js",
@@ -11,11 +11,16 @@
   "bugs": {
     "url": "https://github.com/DevTeamHub/ladda-preloader2/issues"
   },
+  "files": [
+    "src",
+    "index.d.ts"
+  ],
   "homepage": "https://github.com/DevTeamHub/ladda-preloader2#readme",
   "scripts": {
     "start": "npm run build && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
     "tsc": "tsc",
+    "postinstall": "npm i ladda && npm run build",
     "tsc:w": "tsc -w",
     "build": "rimraf lib && tsc"
   },
