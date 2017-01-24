@@ -1,0 +1,1 @@
+export * from './lib/ladda-preloader2.component';
