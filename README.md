@@ -7,6 +7,11 @@ This is Angular 2 wrapper for [Ladda](https://github.com/hakimel/Ladda)
 <a href="http://lab.hakim.se/ladda/" target_='blank'>Check out Ladda's demo</a>
 
 
+## Useful links
+
+- [Confluence doc](http://confluence.dev-team.com/display/DOC/AngularJS+2+version)
+- [NPM](https://www.npmjs.com/package/ng2-ladda-preloader)
+
 ## Requirements
 - [NPM](https://npmjs.org/) - Node package manager
 
